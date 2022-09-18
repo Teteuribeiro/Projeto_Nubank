@@ -162,7 +162,7 @@
 .list-item {
   list-style: none;
   position: relative;
-  padding: 8px 8px 8px 72px;
+  padding: 16px 8px 8px 72px;
   margin-bottom: 48px;
 }
 .list-item::after {
@@ -1209,6 +1209,11 @@ header {
 
 .icon-network {
   max-width: 48px;
+}
+
+.icon-network-2 {
+  max-width: 55px;
+  stroke-width: 4%;
 }
 
 .teste {

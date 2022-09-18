@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="js/svg-inject.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
 </head>
 <body>
 
@@ -28,7 +29,7 @@
         </nav>
 
         <!-- ================= NAVBAR DESKTOP ================= -->
-        <nav class="navbar-desktop">
+        <nav class="navbar-desktop" data-aos="fade-up">
             <div class="navbar-desktop-item-1">
                 <div class="logo">
                     <img src="/svg/logonu.svg" alt="" onload="SVGInject(this)"/>
@@ -118,7 +119,7 @@
         <img src="/svg/bg-home.svg" class="svg-bg-home" alt="" onload="SVGInject(this)"/>
     </div>
     <main class="container hero py-5">
-        <div class="flex-item-1 py-3">
+        <div class="flex-item-1 py-3" data-aos="fade-up" data-aos-delay="200">
             <h1>Ser Nubank é reinventar sua vida financeira</h1>
             <p class="my-2">
                 Conta com rendimento acima da poupança, 
@@ -131,7 +132,7 @@
                 <a href=""><img src="/svg/google-play.svg" class="ml-1 teste" alt="" onload="SVGInject(this)"/></a>
             </div>
         </div>
-        <div class="flex-item-3 div-card flex-center py-4">
+        <div class="flex-item-3 div-card flex-center py-4" data-aos="fade-up" data-aos-delay="500">
             <img src="/svg/icon-card.svg" class="icon-card-hero dropshadow" alt="" onload="SVGInject(this)"/>
             <img src="/svg/icon-mobile.svg" class="icon-mobile-hero dropshadow" alt="" onload="SVGInject(this)"/>
             <img src="/svg/icon-contactless.svg" class="icon-contactless-hero dropshadow" alt="" onload="SVGInject(this)"/>
@@ -144,7 +145,7 @@
     <!-- ================= SECTION PEOPLE ================= -->
 
     <section class="container">
-        <div class="flex-item-4 flex-column">
+        <div class="flex-item-4 flex-column" data-aos="fade-up" data-aos-delay="0">
             <h5>Para todos</h5>
             <h2 class="mt-2">Completo.</h2>
             <p class="my-2 ">
@@ -173,21 +174,47 @@
             </p>
             
         </div>
-        <div class="flex-item-3 mx-2">
+        <div class="flex-item-3 mx-2" data-aos="fade-up" data-aos-delay="200">
             <img src="/svg/svg-people1.svg" alt="" onload="SVGInject(this)"/>
         </div>
-        <div class="flex-item-1 flex-column">
+        <div class="flex-item-1 flex-column" data-aos="fade-up">
             <img src="/svg/svg-people2.svg" id="people2" class="mx-2 my-2" alt="" onload="SVGInject(this)"/>
             <img src="/svg/svg-people3.svg" class="mx-2 my-2" alt="" onload="SVGInject(this)"/>
+        </div>
+    </section>
+
+    <!-- ================= SECTION BEST ================= -->
+    <section class="container">
+        <div class="best px-3 py-4"data-aos="fade-up" data-aos-delay="200">
+            <div class="flex-item-auto">
+                <h5 class="align-text-left">O melhor</h5>
+                <h2>Por que Nubank?</h2>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="/svg/icon-cash.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Conta que rende mais que a poupança</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="/svg/icon-transfer.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Transferências e TEDs ilimitadas</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="/svg/icon-card.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">Conta e cartão 100% gratuitos</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="/svg/icon-phone.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
+                <p class="mt-2 bold">O melhor suporte 24h do Brasil</p>
+            </div>
         </div>
     </section>
     
     <!-- ================= SECTION DIGITAL ACCOUNT ================= -->
     <section class="container">
-        <div class="flex-item-1 px-3">
+        <div class="flex-item-1 px-3" data-aos="fade-up" data-aos-delay="0">
             <img class="" src="/svg/fignu2.svg" alt="" onload="SVGInject(this)" />
         </div>
-        <div class="flex-item-1">
+        <div class="flex-item-1" data-aos="fade-up" data-aos-delay="200">
             <h5>Conta digital</h5>
             <h2 class="mt-2">Tudo pelo App</h2>
             <p class="my-2"> 
@@ -218,7 +245,7 @@
 
     <!-- ================= SECTION CARD ================= -->
     <section class="container" style="padding-top: 0;">
-        <div class="flex-item-1">
+        <div class="flex-item-1" data-aos="fade-up" data-aos-delay="0">
             <h5>Seu roxinho</h5>
             <h2 class="mt-2">Crédito e débito.</h2>
             <p class="my-2">
@@ -246,44 +273,20 @@
                 </div>
             </ul>
         </div>
-        <div class="flex-item-1 p-3">
+        <div class="flex-item-1 p-3" data-aos="fade-up" data-aos-delay="200">
             <img src="/svg/fignu3.svg" class="mx-2 my-2" alt="" onload="SVGInject(this)"/>
         </div>
     </section>
     
-    <!-- ================= SECTION BEST ================= -->
-    <section class="container">
-        <div class="best px-3 py-4">
-            <div class="flex-item-auto">
-                <h5 class="align-text-left">O melhor</h5>
-                <h2>Por que Nubank?</h2>
-            </div>
-            <div class="best-item flex-item-auto">
-                <img src="/svg/icon-cash.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
-                <p class="mt-2 bold">Conta que rende mais que a poupança</p>
-            </div>
-            <div class="best-item flex-item-auto">
-                <img src="/svg/icon-transfer.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
-                <p class="mt-2 bold">Transferências e TEDs ilimitadas</p>
-            </div>
-            <div class="best-item flex-item-auto">
-                <img src="/svg/icon-card.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
-                <p class="mt-2 bold">Conta e cartão 100% gratuitos</p>
-            </div>
-            <div class="best-item flex-item-auto">
-                <img src="/svg/icon-phone.svg" class="icon w-auto" alt="" onload="SVGInject(this)"/>
-                <p class="mt-2 bold">O melhor suporte 24h do Brasil</p>
-            </div>
-        </div>
-    </section>
+    
      <!-- ================= SECTION SLIDER ================= -->
 
-    <section class="box">
+    <section class="box" data-aos="fade-up" data-aos-delay="0">
       <h5>Depoimentos</h5>
       <h2>Todos amam o roxinho</h2>
     </section>
 
-    <section class="container-swiper ">
+    <section class="container-swiper " data-aos="fade-up" data-aos-delay="200">
        <div class="swiper-container">
          <div class="swiper-wrapper">
            <div class="swiper-slide">
@@ -297,7 +300,7 @@
            </div>
            <div class="swiper-slide">
              <div class="photo-profile photo-2"></div>
-             <h4 class="my-1">Jorge Silva</h4>
+             <h4 class="my-1">Maria Clara</h4>
              <p class="my-1">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                pellentesque vulputate at mattis nibh nulla est. Pharetra, eget
@@ -306,7 +309,7 @@
            </div>
            <div class="swiper-slide">
              <div class="photo-profile photo-3"></div>
-             <h4 class="my-1">Jorge Silva</h4>
+             <h4 class="my-1">Ana Luísa</h4>
              <p class="my-1">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                pellentesque vulputate at mattis nibh nulla est. Pharetra, eget
@@ -315,7 +318,7 @@
            </div>
            <div class="swiper-slide">
              <div class="photo-profile photo-4"></div>
-             <h4 class="my-1">Jorge Silva</h4>
+             <h4 class="my-1">Eduarda Oliveira</h4>
              <p class="my-1">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                pellentesque vulputate at mattis nibh nulla est. Pharetra, eget
@@ -324,7 +327,7 @@
            </div>
            <div class="swiper-slide">
              <div class="photo-profile photo-5"></div>
-             <h4 class="my-1">Jorge Silva</h4>
+             <h4 class="my-1">Pedro Henrique</h4>
              <p class="my-1">
                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                pellentesque vulputate at mattis nibh nulla est. Pharetra, eget
@@ -341,7 +344,7 @@
 
     <!-- ================= SECTION APP NUBANK ================= -->
     <section class="container">
-        <div class="flex-item-1">
+        <div class="flex-item-1" data-aos="fade-up" data-aos-delay="200">
             <h5>Faça sua conta</h5>
             <h2 class="mt-2">Baixe. É gratuito.</h2>
             <p class="my-2">
@@ -354,7 +357,7 @@
                 <img src="/svg/google-play.svg" class="w-auto ml-3 button-app" alt="" onload="SVGInject(this)"/>
             </div>
         </div>
-        <div class="flex-item-1 p-1">
+        <div class="flex-item-1 p-1" data-aos="fade-up" data-aos-delay="200">
             <img src="/svg/fignu4.svg" class="my-2" alt="" onload="SVGInject(this)"/>
         </div>
     </section>
@@ -364,7 +367,7 @@
     <div class="bg-invite relative flex-center">
         <img src="/svg/fignu5.svg" class="mx-2 my-2 svg-invite" alt="" onload="SVGInject(this)"/>
         <section class="container">
-            <div class="flex-item-1 flex-center flex-column">
+            <div class="flex-item-1 flex-center flex-column" data-aos="fade-up" data-aos-delay="200">
                 <h5>NU Conta</h5>
                 <h2 class="mt-2">O melhor do bancos digitais pra você.</h2>
                 <p>
@@ -435,10 +438,10 @@
                 </p>
             </div>
             <div class="flex-start">
-                <a href=""><img src="svg/icon-facebook.svg" class="icon-network mx-1 p-1" alt=""  onload="SVGInject(this)"/></a>
-                <a href=""><img src="svg/icon-youtube.svg" class="icon-network mx-1 p-1" alt=""  onload="SVGInject(this)"/></a>
-                <a href=""><img src="svg/icon-instagram.svg" class="icon-network mx-1 p-1" alt=""  onload="SVGInject(this)"/></a>
-                <a href=""><img src="svg/icon-twitter.svg" class="icon-network mx-1 p-1" alt=""  onload="SVGInject(this)"/></a>                
+                <p class="color-white">Todos os direitos reservados a @Matheus Ribeiro</p>
+                <a href="https://www.instagram.com/matheusribeiro993/" target="_blank"><img src="svg/icon-instagram.svg" class="icon-network p-1" alt=""  onload="SVGInject(this)"/></a>
+                <a href="https://www.facebook.com/profile.php?id=100003170602869" target="_blank" ><img src="svg/icon-facebook.svg" class="icon-network p-1" alt=""  onload="SVGInject(this)"/></a>
+                <a href="https://wa.me/5549991136801?text=Olá%20vi%20seu%20site%20" target="_blank" ><img src="svg/icon-whatsapp.svg" class="icon-network-2 p-1" alt=""  onload="SVGInject(this)"/></a>
             </div>
         </section>
     </footer>
@@ -446,6 +449,11 @@
     <!-- ================= JS ================= -->
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         const swiper = new Swiper(".swiper-container", {
