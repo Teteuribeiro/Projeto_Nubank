@@ -305,3 +305,10 @@ footer{
 .bt-purple{
     border-top: 1px solid $secondary-light;
 }
+
+.sm-left{
+
+    @include responsive(sm){
+        flex-direction: row;
+    }
+}

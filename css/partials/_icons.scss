@@ -130,3 +130,17 @@
 .icon-network{
   max-width: 48px;
 }
+
+.teste{
+  padding-left: 5%;
+
+  @include responsive(lg){
+    padding-left: 5%;
+  }
+  @include responsive(md){
+    padding-left: 5%;
+  }
+  @include responsive(sm){
+    padding-left: 5%;
+  }
+}
