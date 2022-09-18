@@ -909,7 +909,7 @@ header {
   .navbar-mobile {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -1794,32 +1794,87 @@ header {
     transform: translate3d(-40px, -10px, 0) rotate(180deg);
   }
 }
-.fignu4-letter-u, .fignu4-letter-n {
-  -webkit-animation: fignu4-letter 4s ease infinite alternate;
-          animation: fignu4-letter 4s ease infinite alternate;
-  stroke-dasharray: 1 400;
-  stroke-opacity: 0;
+.fignu4-letter-u {
+  -webkit-animation: fignu4-letter-u 4s ease infinite alternate;
+          animation: fignu4-letter-u 4s ease infinite alternate;
+  transform-origin: center center;
+  transform-box: fill-box;
 }
 
-@-webkit-keyframes fignu4-letter {
+.fignu4-letter-n {
+  -webkit-animation: fignu4-letter-n 4s ease infinite alternate;
+          animation: fignu4-letter-n 4s ease infinite alternate;
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes fignu4-letter-n {
   0% {
     stroke-dasharray: 1 400;
+    transform: translate3d(0, 0, 0);
     stroke-opacity: 0;
   }
-  60%, 100% {
+  20%, 50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
     stroke-dasharray: 400 0;
-    stroke-opacity: 1;
+    stroke-width: 1.5;
+  }
+  60%, 100% {
+    transform: translate3d(125px, 10px, 0) rotate(180deg);
+    opacity: 1;
   }
 }
 
-@keyframes fignu4-letter {
+@keyframes fignu4-letter-n {
   0% {
     stroke-dasharray: 1 400;
+    transform: translate3d(0, 0, 0);
     stroke-opacity: 0;
   }
-  60%, 100% {
+  20%, 50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
     stroke-dasharray: 400 0;
-    stroke-opacity: 1;
+    stroke-width: 1.5;
+  }
+  60%, 100% {
+    transform: translate3d(125px, 10px, 0) rotate(180deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fignu4-letter-u {
+  0% {
+    stroke-dasharray: 1 400;
+    transform: translate3d(0, 0, 0);
+    stroke-opacity: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 400 0;
+    stroke-width: 1.5;
+  }
+  60%, 100% {
+    transform: translate3d(-125px, -10px, 0) rotate(180deg);
+    opacity: 1;
+  }
+}
+@keyframes fignu4-letter-u {
+  0% {
+    stroke-dasharray: 1 400;
+    transform: translate3d(0, 0, 0);
+    stroke-opacity: 0;
+  }
+  20%, 50% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    stroke-dasharray: 400 0;
+    stroke-width: 1.5;
+  }
+  60%, 100% {
+    transform: translate3d(-125px, -10px, 0) rotate(180deg);
+    opacity: 1;
   }
 }
 .fignu5-ball1 {
