@@ -779,9 +779,8 @@ header {
   height: 72px;
   background-color: transparent;
   box-shadow: none;
-  position: absolute;
+  position: fixed;
   z-index: 800;
-  overflow: hidden;
   transition: 0.5s ease;
 }
 
@@ -907,12 +906,12 @@ header {
 }
 
 .navbar-mobile {
-  max-width: 540px;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 10px 24px;
   display: none;
-  overflow: hidden;
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 960px) {
   .navbar-mobile {
     display: flex;
     justify-content: space-between;
