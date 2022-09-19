@@ -900,7 +900,7 @@ header {
 }
 
 .navbar-mobile {
-  max-width: 1440px;
+  max-width: 540px;
   margin: 0 auto;
   padding: 10px 24px;
   display: none;
