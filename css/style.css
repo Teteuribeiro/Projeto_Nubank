@@ -768,13 +768,19 @@ svg, img {
   border: 1px solid red;
 }
 
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 header {
   width: 100%;
   height: 72px;
   background-color: transparent;
   box-shadow: none;
-  position: fixed;
-  z-index: 999;
+  position: absolute;
+  z-index: 800;
   transition: 0.5s ease;
 }
 
@@ -900,17 +906,16 @@ header {
 }
 
 .navbar-mobile {
-  max-width: 1440px;
+  max-width: 540px;
   padding: 10px 24px;
   display: none;
-  position: fixed;
+  overflow: hidden;
 }
-@media screen and (max-width: 1140px) and (min-width: 960px) {
+@media screen and (max-width: 540px) {
   .navbar-mobile {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    position: absolute;
   }
 }
 
@@ -972,7 +977,7 @@ header {
 }
 
 .menu-mobile {
-  width: 100vw;
+  width: 540px;
   height: 100vh;
   background-color: #f7f2fa;
   display: flex;

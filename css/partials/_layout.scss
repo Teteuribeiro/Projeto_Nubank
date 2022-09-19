@@ -39,7 +39,7 @@ $container-sm: 540px;
         }
     }
 
-    @else if $device == xs {
+    @else if $device == xs{
         //resolucao menor que 540px
         @media screen and (max-width: $container-sm){
             @content;
